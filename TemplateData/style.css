@@ -8,7 +8,7 @@ body { padding: 0; margin: 0 }
 #unity-progress-bar-full { width: 0%; height: 18px; margin-top: 10px; background: url('progress-bar-full-dark.png') no-repeat center }
 #unity-footer { position: relative }
 #unity-webgl-logo { float:left; width: 204px; height: 38px; background: url('webgl-logo.png') no-repeat center }
-#unity-build-title { float: right; margin-right: 10px; line-height: 38px; font-family: arial; font-size: 18px }
+#unity-build-title { float: right; margin-right: 10px; line-height: 38px; font-family: arial; font-size: 30px }
 #unity-fullscreen-button { cursor:pointer; float: right; width: 38px; height: 38px; background: url('fullscreen-button.png') no-repeat center }
 #unity-webxr-link { float: left; margin-right: 10px; line-height: 38px; font-family: arial; font-size: 18px }
 /* #entervr:enabled { float: right; width: 38px; height: 38px; background-color: #1eaed3; display: inline-block; border: 0; }
@@ -23,6 +23,10 @@ body { padding: 0; margin: 0 }
     position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);
 }
 
+#unity-footer p {
+    font-size: 30px;
+}
+
 #unity-button {
     display: flex;
     justify-content: center;
@@ -30,12 +34,13 @@ body { padding: 0; margin: 0 }
 }
 
 #unity-button button {
-    padding: 5px 15px;
+    padding: 15px 30px;
     border-radius: 10px;
     border:1px solid #4e6096;
 	background-color:transparent;
 	cursor:pointer;
 	color:#4e6096;
+    font-size: 15px;
 	font-family:Arial;
 	text-shadow:0px 1px 0px #283966;
 }
