@@ -24,7 +24,7 @@ body { padding: 0; margin: 0 }
 }
 
 #unity-footer p {
-    font-size: 30px;
+    font-size: 20px;
 }
 
 #unity-button {
@@ -46,7 +46,7 @@ body { padding: 0; margin: 0 }
 }
 
 #unity-button button:hover {
-    padding: 5px 15px;
+    padding: 15px 30px;
     border-radius: 10px;
     border:1px solid #4e6096;
 	background-color:#4e6096;
