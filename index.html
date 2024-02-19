@@ -61,11 +61,11 @@
           unityInstance = instance;
           loadingBar.style.display = "none";
 
-          document.addEventListener('onARSupportedCheck', function (event) {
-           if (event.detail.supported) {
-              unityInstance.WebXR.toggleAR();
-            }
-          }, false);
+          // document.addEventListener('onARSupportedCheck', function (event) {
+          //  if (event.detail.supported) {
+          //     unityInstance.WebXR.toggleAR();
+          //   }
+          // }, false);
           // unityInstance.Module.WebXR.toggleAR();
 
           if (fullscreenButton)
@@ -80,20 +80,20 @@
       };
       document.body.appendChild(script);
 
-      // let enterARButton = document.getElementById('enterar');
+      let enterARButton = document.getElementById('enterar');
       // let enterVRButton = document.getElementById('entervr');
     
-      // document.addEventListener('onARSupportedCheck', function (event) {
-      //   enterARButton.disabled = !event.detail.supported;
-      // }, false);
+      document.addEventListener('onARSupportedCheck', function (event) {
+        enterARButton.disabled = !event.detail.supported;
+      }, false);
 
       // document.addEventListener('onVRSupportedCheck', function (event) {
       //   enterVRButton.disabled = !event.detail.supported;
       // }, false);
 
-      // enterARButton.addEventListener('click', function (event) {
-      //   unityInstance.Module.WebXR.toggleAR();
-      // }, false);
+      enterARButton.addEventListener('click', function (event) {
+        unityInstance.Module.WebXR.toggleAR();
+      }, false);
       // enterVRButton.addEventListener('click', function (event) {
       //   unityInstance.Module.WebXR.toggleVR();
       // }, false);
