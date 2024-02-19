@@ -2,9 +2,9 @@ body { padding: 0; margin: 0; background-color: #000000; }
 #unity-container { position: absolute }
 #unity-container { left: 50%; top: 50%; transform: translate(-50%, -50%) }
 #unity-canvas { background: #231F20;}
-#unity-loading-bar { position: absolute; left: 50%; top: 60%; transform: translate(-50%, -50%);}
-#unitylogo { width: 150px; height: auto; no-repeat center }
-#unity-progress-bar-empty { width: 141px; height: 18px; margin-top: 10px; margin-left: 6.5px; background: url('progress-bar-empty-dark.png') no-repeat center }
+#unity-loading-bar { position: absolute; left: 50%; top: 45%; transform: translate(-50%, -50%);}
+#unitylogo { position: absolute; width:300px; left: 50%; top: 30%; transform: translate(-50%, -50%);}
+#unity-progress-bar-empty { width: 141px; height: 18px; margin-top: 30px; margin-left: 6.5px; background: url('progress-bar-empty-dark.png') no-repeat center }
 #unity-progress-bar-full { width: 0%; height: 18px; margin-top: 10px; background: url('progress-bar-full-dark.png') no-repeat center }
 /* #unity-footer { position: relative } */
 #unity-webgl-logo { float:left; width: 204px; height: 38px; background: url('webgl-logo.png') no-repeat center }
@@ -20,7 +20,7 @@ body { padding: 0; margin: 0; background-color: #000000; }
     flex-direction: column;
     align-items: center;
     gap: 5px;
-    position: absolute; left: 50%; top: 80%; transform: translate(-50%, -50%);
+    position: absolute; left: 50%; top: 70%; transform: translate(-50%, -50%);
 }
 
 #unity-footer p {
@@ -34,20 +34,18 @@ body { padding: 0; margin: 0; background-color: #000000; }
 }
 
 #unity-button button {
-    padding: 15px 60px;
+    padding: 30px 70px;
     border-radius: 10px;
     border:1px solid #ffffff;
 	background-color:transparent;
 	cursor:pointer;
 	color:#ffffff;
-    font-size: 20px;
+    font-size: 40px;
 	font-family:Arial;
 	text-shadow:0px 1px 0px #ffffff;
 }
 
 #unity-button button:hover {
-    padding: 15px 60px;
-    border-radius: 10px;
     border:1px solid #ffffff;
 	background-color:#ffffff;
 	cursor:pointer;
