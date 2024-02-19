@@ -22,7 +22,7 @@
       <div id="unity-footer">
         <div  id="unity-button">
           <!-- <button id="entervr" value="Enter VR" disabled>VR</button> -->
-          <button id="enterar" value="Enter AR" disabled>MULAI</button>
+          <button id="enterar" value="Enter AR" style="display: none;" disabled>MULAI</button>
         </div>
       </div>
     </div>
@@ -59,14 +59,15 @@
           progressBarFull.style.width = 100 * progress + "%";
         }).then((instance) => {
           unityInstance = instance;
-          // loadingBar.style.display = "none";
+          loadingBar.style.display = "none";
+          enterar.style.display = "block";
 
           // document.addEventListener('onARSupportedCheck', function (event) {
           //  if (event.detail.supported) {
           //     unityInstance.WebXR.toggleAR();
           //   }
           // }, false);
-          unityInstance.Module.WebXR.toggleAR();
+          // unityInstance.Module.WebXR.toggleAR();
 
           if (fullscreenButton)
           {
