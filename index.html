@@ -60,12 +60,13 @@
         }).then((instance) => {
           unityInstance = instance;
           loadingBar.style.display = "none";
-          // document.addEventListener('onARSupportedCheck', function (event) {
-          //  if (event.detail.supported) {
-          //     unityInstance.Module.WebXR.toggleAR();
-          //   }
-          // }, false);
-          unityInstance.Module.WebXR.toggleAR();
+
+          document.addEventListener('onARSupportedCheck', function (event) {
+           if (event.detail.supported) {
+              unityInstance.WebXR.toggleAR();
+            }
+          }, false);
+          // unityInstance.Module.WebXR.toggleAR();
 
           if (fullscreenButton)
           {
